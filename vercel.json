@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "comments-section/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "comments-section/$1"
+      }
+    ]
+  }
+  
